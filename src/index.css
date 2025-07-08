@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body.tema-light {
+  background: linear-gradient(to bottom right, #d3d3d3, #f7f7f7);
+  color: #000000;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Tema oscuro */
+body.tema-dark {
+  background: #121212;
+  color: #f5f5f5;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Tema monoespaciado */
+body.tema-mono {
+  background: linear-gradient(to bottom right, #d3d3d3, #f7f7f7);
+  color: #222222;
+  font-family: 'Courier New', monospace;
+}
+
+main {
+  padding: 1rem;
+  display: flex;
+  height: 100vh; 
+}
+
+.opciones-verticales {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  margin-right: 1rem;
+  display: flex;
+  gap: 1rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.opciones-verticales button {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: inherit;
+}
+/* Tema claro (por defecto, ya lo tienes) */
+
+/* Tema oscuro */
+.tema-dark .contenedor-header-section {
+  background-color: #1e1e1e;
+  border-color: #444;
+}
+.tema-dark .btn {
+  color: #f5f5f5;
+}
+.tema-dark .descripcion{
+  color:#fffefe
+}
+.tema-dark .opciones-verticales{
+  color:#fffefe
+}
+.tema-dark .btn:hover {
+  background-color: #333;
+}
+
+/* Tema monoespaciado */
+.tema-mono .contenedor-header-section{
+  border-color: #aaa;
+}
+.tema-mono .btn {
+  color: #000;
+}
+.tema-mono .btn:hover {
+  background-color: #ddd;
+}
+
+
+.cuadro {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #222;
+  background-color: #ffffff;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cuadro-activo {
+  background-color: black;
+}
+
+
+.contenedor-header-section {
+  position: relative;
+  background-color: #d3d3d3;
+  padding: 2rem;
+  border: 2px solid #222;
+  border-radius: 18px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.contenedor-header-section::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: 
+    radial-gradient(circle at 30% 30%, rgba(88, 84, 84, 0), transparent 50%),
+    radial-gradient(circle at 70% 70%, rgb(80, 77, 77), transparent 50%);
+  animation: moverNiebla 15s ease-in-out infinite;
+  z-index: 0;
+  opacity: 0.6;
+  filter: blur(40px);
+  pointer-events: none;
+  background-blend-mode: overlay;
+}
+
+@keyframes moverNiebla {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(5%, -3%) scale(1.05);
+  }
+  50% {
+    transform: translate(-4%, 4%) scale(1.1);
+  }
+  75% {
+    transform: translate(2%, -1%) scale(1.03);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+/* Para que el contenido esté por encima */
+.contenedor-header-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+.titulo {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: -0.5rem;
+}
+.blanco {
+  animation: cambiar 5s infinite alternate;
+}
+@keyframes cambiar {
+  0% {
+    color: #687ddb; 
+  }
+  50% {
+    color: #4cb8c0;
+  }
+  100% {
+    color: #3a2acc; 
+  }
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 1.0rem;
+}
+
+.menu-navegacion{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+.menu-navegacion a{
+  text-decoration: none;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn{
+  padding: 6px 5px;
+  width: 120px;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.btn:hover{
+  background-color: #0f0303;
+  color: white;
+  transform: scale(1.05); 
+}
+
+.contenedor_descripcion {
+  font-size: 1.1rem;
+  padding: 3rem;
+  padding-left: 45rem;
+}
+
+.descripcion{
+  color: #333;
+  display: flex;
+}
