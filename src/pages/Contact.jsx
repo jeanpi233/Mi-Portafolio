@@ -1,7 +1,7 @@
 import "./Contact.css";
 import { FaGithub } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import { alerta } from "../router/alerta";
+import { Alerta } from "../router/Alerta";
 
 export default function Contact() {
   return (
