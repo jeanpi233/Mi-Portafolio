@@ -1,5 +1,3 @@
-
-
 .barra-navegacion {
   display: flex;
   justify-content: space-between;
@@ -7,10 +5,11 @@
   padding: 1rem 2rem;
   border-radius: 12px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
-  font-family: 'Arial', sans-serif;
-  border: 2px solid #222; 
+  border: 2px solid #222;
 }
-
+.tema-dark .barra-navegacion {
+  border-color: #afaeae;
+}
 .marca {
   display: flex;
   align-items: center;
@@ -28,16 +27,28 @@
 
 @keyframes cambiarColor {
   0% {
-    color: #687ddb; 
+    color: #687ddb;
   }
   50% {
     color: #4cb8c0;
   }
   100% {
-    color: #3a2acc; 
+    color: #3a2acc;
   }
 }
-
+.nombre-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.nombre-link:hover {
+  text-decoration: underline;
+  color: var(--color-acento);
+}
+.nombre-link:hover {
+  color: #00bfff;
+  text-shadow: 0 0 4px rgba(0, 191, 255, 0.5);
+}
 
 .menu {
   display: flex;
@@ -52,7 +63,11 @@
   align-items: center;
   gap: 0.5rem;
   text-decoration: none;
-  color: #333;
+  color: #050505;
+}
+
+.tema-dark .menu li a {
+  color: #ffffff;
 }
 
 .menu li a:hover {
@@ -70,15 +85,14 @@
 /* ESTILO GENERAL DEL BOTÓN */
 .temas-vertical button {
   display: flex;
-  flex-direction: column; /* emoji arriba, texto abajo */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: transparent;
   border: none;
   cursor: pointer;
   padding: 0.5rem;
-  font-size: 1rem; /* tamaño del emoji */
-  color: #333;
+  font-size: 1rem;
   transition: all 0.3s ease;
 }
 
@@ -92,84 +106,14 @@
 /* EFECTO AL PASAR EL MOUSE */
 .temas-vertical button:hover {
   transform: scale(1.1);
-  color: #4cb8c0;
+  color: #ebf1f1;
 }
 
 /* ESTILO PARA EL BOTÓN ACTIVO (tema seleccionado) */
 .temas-vertical button.activo {
-  color: #4cb8c0;
+  color: #ffffff;
   transform: scale(1.1);
-}
-/* ESTILOS PARA LOS TEMAS */
-.tema-dark .barra-navegacion {
-  background-color: #222;
-  color: #fff;
-  border-color: #fff;
-}
-.tema-dark .menu li a {
-  color: #f5f5f5;
-
-}
-.tema-dark .menu li a:hover {
-  color: #4cb8c0;
-}
-.tema-dark .temas-vertical button {
-  color: #f5f5f5;
-}
-.tema-dark .temas-vertical button:hover {
-  color: #4cb8c0;
-}
-.tema-dark .temas-vertical button.activo {
-  color: #4cb8c0;
-  transform: scale(1.1);
-}
-
-
-.tema-light .barra-navegacion {
-  background: linear-gradient(to bottom right, #d3d3d3, #f7f7f7);
-  color: #000;
-  border-color: #000000;
-}
-.tema-light .menu li a {
-  color: #131010;
-
-}
-.tema-light .menu li a:hover {
-  color: #4cb8c0;
-}
-.tema-light .temas-vertical button {
-  color: #0f0e0e;
-}
-.tema-light .temas-vertical button:hover {
-  color: #4cb8c0;
 }
 .tema-light .temas-vertical button.activo {
-  color: #4cb8c0;
-  transform: scale(1.1);
+  color: rgb(94, 93, 93);
 }
-
-
-.tema-mono .barra-navegacion {
-  font-family: 'Courier New', monospace;
-  background: linear-gradient(to bottom right, #d3d3d3, #f7f7f7);
-  border-color: #aaa;
-  color: #111;
-}
-
-.tema-mono .menu li a {
-  color: #000;
-}
-.tema-mono  .menu li a:hover {
-  color: #4cb8c0;
-}
-.tema-mono .temas-vertical button {
-  color: #0f0e0e;
-}
-.tema-mono .temas-vertical button:hover {
-  color: #4cb8c0;
-}
-.tema-mono .temas-vertical button.activo {
-  color: #4cb8c0;
-  transform: scale(1.1);
-}
-

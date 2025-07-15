@@ -7,7 +7,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Enrutador } from "./router/Enrutador";
 
 const TemaProvider = () => {
-  const [tema, setTema] = useState(() => localStorage.getItem("tema") || "light");
+  const [tema, setTema] = useState(
+    () => localStorage.getItem("tema") || "light"
+  );
 
   useEffect(() => {
     document.body.className = "";

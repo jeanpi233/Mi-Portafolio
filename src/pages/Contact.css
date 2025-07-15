@@ -1,3 +1,144 @@
 .contacto_seccion {
-    padding: 2rem;
+  padding: 3rem;
+}
+.lista-contacto {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.lista-contacto li {
+  margin-bottom: 10px;
+}
+
+.formulario-contacto {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario-contacto button {
+  background-color: #000;
+  color: #f5efef;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.lista-contacto a {
+  color: #0077ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.lista-contacto a:hover {
+  color: #0056b3;
+}
+.formulario-contacto {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: transparent;
+  padding: 1rem;
+}
+
+.correo-destino {
+  font-size: 1.6rem;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 0;
+}
+.tema-light .correo-destino {
+  color: #1a1818;
+}
+
+.correo-desc {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+.tema-light .correo-desc {
+  color: #1a1818;
+}
+
+.inputs-grid {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.inputs-grid input {
+  flex: 1;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #7e848a;
+  padding: 8px;
+  width: 100%;
+  color: inherit;
+  outline: none;
+  font-size: 1rem;
+}
+
+.formulario-contacto textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.tema-dark .formulario-contacto input,
+.tema-dark .formulario-contacto textarea {
+  color: #faf7f7;
+}
+.formulario-contacto ::placeholder {
+  color: #faf7f7;
+}
+.tema-light .formulario-contacto ::placeholder {
+  color: #1a1818;
+}
+
+.formulario-contacto button {
+  padding: 10px 20px;
+  border: 2px solid #646464;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #0d0e0f;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+  background-color: #1a1b1b;
+  color: white;
+}
+.tema-dark .formulario-contacto button {
+  color: #faf7f7;
+}
+.redes-contacto {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  font-size: 2.5rem;
+}
+
+.redes-contacto a {
+  color: #e7e8e9;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.tema-light .redes-contacto a {
+  color: #1a1818;
+}
+.redes-contacto a:hover {
+  transform: scale(1.2);
+}
+.tema-light .redes-contacto a {
+  color: #1a1818;
 }
