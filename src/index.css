@@ -161,6 +161,8 @@ main {
   .contenedor-header-section {
     padding: 1rem;
     width: 22rem;
+    margin-left: 0.2rem;
+    margin-right: 0.3rem;
   }
 }
 .contenedor-header-section::before {
