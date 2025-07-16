@@ -26,7 +26,8 @@ export default function Home({ tema, setTema }) {
       </div>
 
       <div className="contenedor-header-section">
-        <header className="contenedor_header">
+       
+          <section>
           <h1 className="titulo">
             <span className="icono-inicio">&lt;/&gt;</span>
             <span className="blanco">Jeanpierry</span>Moreno
@@ -50,6 +51,7 @@ export default function Home({ tema, setTema }) {
               </Link>
             </li>
           </ul>
+          </section>
           <section className="contenedor_descripcion">
             <p className="descripcion">
               Hola, soy un desarrollador web apasionado por crear experiencias
@@ -76,7 +78,6 @@ export default function Home({ tema, setTema }) {
               </ul>
             </div>
           </section>
-        </header>
       </div>
     </main>
   );
