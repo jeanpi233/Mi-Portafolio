@@ -1,6 +1,7 @@
 import Home from "../Home";
 import Proyecto from "../pages/Proyecto";
 import Info from "../pages/Info";
+import Hojav from "../pages/Hojav";
 import Contact from "../pages/Contact";
 import Layout from "../componentes/Layout";
 
@@ -24,6 +25,7 @@ export const Enrutador = (tema, setTema) => [
         <Info />
       </Layout>
     ),
+    
   },
   {
     path: "/contacto",
@@ -33,4 +35,13 @@ export const Enrutador = (tema, setTema) => [
       </Layout>
     ),
   },
+  {
+    path: "/Hojav",
+    element:(
+      <Layout tema={tema} setTema={setTema}>
+        <Hojav/>
+      </Layout>
+    ),
+  }
+
 ];

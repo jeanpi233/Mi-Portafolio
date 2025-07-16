@@ -1,6 +1,9 @@
 import { useRef } from "react";
 import "./Info.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
+
 
 export default function Info() {
   const tarjetasRef1 = useRef(null);
@@ -27,6 +30,8 @@ export default function Info() {
               src="/foto_perfil.jpg"
               alt="Foto de perfil"
             />
+            <div className="contenedor-btn-hv"><Link to="/Hojav" className="btn-hv">HV</Link></div>
+
             <h3>Habilidades Técnicas</h3>
             <ul>
               <li>✅ Java & Spring Boot</li>

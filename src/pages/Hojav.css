@@ -1,0 +1,139 @@
+
+.seccion-hoja {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  color: #fff;
+  min-height: 85vh;
+}
+@media(max-width: 760px){
+    .seccion-hoja{
+        min-height: 90vh;
+    }
+}
+
+.titulo-hv {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+.contenedor-hv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px solid #000;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 2px 2px 12px #00000060;
+  text-align: center;
+}
+
+.contenedor-botones {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.btn-ver,
+.btn-descargar {
+  padding: 10px 20px;
+  background-color: #7e7e7e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-ver:hover,
+.btn-descargar:hover {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #000;
+}
+
+
+
+.modal-pdf {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  backdrop-filter: blur(5px);
+}
+
+.modal-contenido {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+  background-color: #111;
+  padding: 2rem 1rem 1rem; 
+  border-radius: 10px;
+  box-shadow: 0 0 20px #000;
+  overflow-y: auto;
+}
+
+
+.cerrar-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10; 
+}
+@media(max-width: 760px){
+    .cerrar-modal{
+       background-color: #ffffff;
+        color: #0c0c0c;
+        border: 0.1rem solid;
+        border-radius: 1rem;
+    }
+}
+
+
+.iframe-pdf {
+  width: 100%;
+  height: 80vh;
+  border: none;
+  border-radius: 6px;
+}
+
+.imagenes-scroll {
+  overflow-y: auto;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding-right: 10px; 
+}
+
+
+.img-hoja {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
