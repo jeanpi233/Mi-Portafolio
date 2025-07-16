@@ -1,5 +1,6 @@
 .proyecto_seccion {
-  width: 100%;
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -23,6 +24,12 @@
   box-shadow: 2px 2px 12px #8f8e8e;
   transition: transform 0.3s ease;
 }
+@media (max-width: 760px) {
+  .proyecto_tarjeta {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .proyecto_tarjeta:hover {
   transform: translateY(-5px);
@@ -44,6 +51,12 @@
   height: auto;
   max-width: 360px;
   border: 0.2rem solid #444;
+}
+@media (max-width: 760px) {
+  .img_tarjeta {
+    max-width: 17.5rem;
+    min-height: 10.5rem;
+  }
 }
 
 .descripcion_pro {

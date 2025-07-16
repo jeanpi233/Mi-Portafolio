@@ -1,5 +1,7 @@
 .contacto_seccion {
   padding: 3rem;
+  max-width: 1200px;
+  margin: auto;
 }
 .lista-contacto {
   list-style: none;
@@ -49,6 +51,12 @@
   color: #ffffff;
   font-weight: bold;
   margin: 0;
+}
+@media (max-height:760px){
+  .correo-destino{
+    font-size: 1.3rem;
+  }
+
 }
 .tema-light .correo-destino {
   color: #1a1818;

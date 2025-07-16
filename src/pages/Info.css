@@ -1,5 +1,7 @@
 .info_seccion {
-  margin: 2rem;
+  padding: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .info_seccion h2 {
   font-size: 1.5rem;
@@ -35,7 +37,11 @@
 .columna:first-child {
   margin-right: 10rem;
 }
-
+@media (max-width: 760px) {
+  .columna:first-child {
+    margin-left: 10rem;
+  }
+}
 .columna {
   display: flex;
   flex-direction: column;
@@ -59,6 +65,11 @@
   padding: 0.5rem;
   transition: transform 0.3s ease;
 }
+@media (max-width: 760px) {
+  .scroll-btn {
+    display: none;
+  }
+}
 .scroll-btn svg {
   width: 24px;
   height: 24px;
@@ -73,13 +84,39 @@
   color: #7e7e7e;
 }
 .scroll-btn.right {
-  right: 0;
+  right: -73px;
 }
 
 .scroll-btn.left {
-  left: 0;
+  left: -73px;
+}
+.scroll-btn-diploma-right {
+  right: -73px;
 }
 
+.scroll-btn-diploma-left {
+  left: -73px;
+}
+@media (min-width: 760px) {
+  .scroll-btn-diploma-left {
+    display: none;
+  }
+}
+@media (min-width: 760px) {
+  .scroll-btn-diploma-right {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .scroll-btn-diploma-right {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .scroll-btn-diploma-left {
+    display: none;
+  }
+}
 .scroll-btn:hover {
   transform: translateY(-50%) scale(1.1);
 }
@@ -107,7 +144,11 @@
   -ms-overflow-style: none;
   transition: transform 0.3s ease;
 }
-
+@media (max-width: 760px) {
+  .tarjetas_plazi {
+    width: 21rem;
+  }
+}
 .tarjeta {
   width: 500px;
   flex-shrink: 0;
@@ -121,7 +162,11 @@
   align-items: center;
   padding: 0.4rem;
 }
-
+@media (max-width: 760px) {
+  .tarjeta {
+    width: 20rem;
+  }
+}
 .tarjeta:active {
   outline: none;
   color: inherit;
@@ -137,6 +182,11 @@
   display: block;
   cursor: pointer;
   border-radius: 10px 10px 0 0;
+}
+@media (max-width: 760px) {
+  .tarjeta img {
+    width: 20rem;
+  }
 }
 .modal_imagen {
   position: fixed;

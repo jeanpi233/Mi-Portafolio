@@ -34,13 +34,14 @@ export default function Home({ tema, setTema }) {
           <p className="subtitulo">Desarrollador Web</p>
           <ul className="menu-navegacion">
             <li>
-              <Link className="btn" to="/proyecto">
-                <FaBook /> Proyectos
-              </Link>
-            </li>
-            <li>
               <Link className="btn" to="/info">
                 <FaUser /> Sobre mí
+              </Link>
+            </li>
+
+            <li>
+              <Link className="btn" to="/proyecto">
+                <FaBook /> Proyectos
               </Link>
             </li>
             <li>

@@ -41,17 +41,17 @@ export default function Info() {
             <h3>Certificaciones (Platzi)</h3>
             <ul>
               <li>🎓 Acta de Grado</li>
-              <li>🎓 Diplomado Document Object Model</li>
-              <li>🎓 Diplomado Estrategias de Inglés</li>
-              <li>🎓 Diplomado Estructuras de Datos</li>
-              <li>🎓 Diplomado Git y GitHub</li>
-              <li>🎓 Diplomado HTML y CSS</li>
-              <li>🎓 Diplomado Java OOP</li>
-              <li>🎓 Diplomado Java y SQL</li>
-              <li>🎓 Diplomado JavaScript</li>
-              <li>🎓 Diplomado Mobile First</li>
-              <li>🎓 Diplomado React.js</li>
-              <li>🎓 Diploma General</li>
+              <li>🎓 Certificado Document Object Model</li>
+              <li>🎓 Certificado Estrategias de Inglés</li>
+              <li>🎓 Certificado Estructuras de Datos</li>
+              <li>🎓 Certificado Git y GitHub</li>
+              <li>🎓 Certificado HTML y CSS</li>
+              <li>🎓 Certificado Java OOP</li>
+              <li>🎓 Certificado Java y SQL</li>
+              <li>🎓 Certificado JavaScript</li>
+              <li>🎓 Certificado Mobile First</li>
+              <li>🎓 Certificado React.js</li>
+              <li>🎓 Certificado General</li>
             </ul>
           </div>
 
@@ -114,71 +114,6 @@ export default function Info() {
                   pdf: "/public/certificados/diploma-html-css.pdf",
                   desc: "Certificación en desarrollo web con HTML y CSS.",
                 },
-              ].map((certi, i) => (
-                <div className="tarjeta" key={i}>
-                  <h3>{certi.titulo}</h3>
-                  <img
-                    src={certi.img}
-                    alt={certi.titulo}
-                    onClick={() => {
-                      setImagenActual(certi.img);
-                      setMostrarImagen(true);
-                    }}
-                  />
-                  <p>{certi.desc}</p>
-                </div>
-              ))}
-            </div>
-
-            <button
-              className="scroll-btn right"
-              onClick={() =>
-                tarjetasRef1.current.scrollBy({ left: 500, behavior: "smooth" })
-              }
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-chevron-right-icon"
-              >
-                <path d="M9 18l6-6-6-6" />
-              </svg>
-            </button>
-          </div>
-
-          <div className="titulo_certi">
-            <h1>Diplomas</h1>
-          </div>
-
-          <div className="contenedor_tarjetas">
-            <button
-              className="scroll-btn left"
-              onClick={() =>
-                tarjetasRef2.current.scrollBy({
-                  left: -500,
-                  behavior: "smooth",
-                })
-              }
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-chevron-left-icon"
-              >
-                <path d="M15 18l-6-6 6-6" />
-              </svg>
-            </button>
-
-            <div className="tarjetas_plazi" ref={tarjetasRef2}>
-              {[
                 {
                   titulo: "Diplomado Java OOP",
                   img: "/DIPLOMAS_JPG/diploma-java-oop_page-0001.jpg",
@@ -228,7 +163,7 @@ export default function Info() {
             <button
               className="scroll-btn right"
               onClick={() =>
-                tarjetasRef2.current.scrollBy({ left: 500, behavior: "smooth" })
+                tarjetasRef1.current.scrollBy({ left: 500, behavior: "smooth" })
               }
             >
               <svg
@@ -242,6 +177,59 @@ export default function Info() {
               >
                 <path d="M9 18l6-6-6-6" />
               </svg>
+            </button>
+          </div>
+          <div className="contenedor_tarjetas"></div>
+          <div className="titulo_certi">
+            <h1>Diplomas</h1>
+          </div>
+
+          <div className="contenedor_tarjetas">
+            <button
+              className="scroll-btn-diploma-left"
+              onClick={() =>
+                tarjetasRef1.current.scrollBy({
+                  left: -500,
+                  behavior: "smooth",
+                })
+              }
+            >
+            </button>
+            <div className="tarjetas_plazi" ref={tarjetasRef2}>
+              {[
+                {
+                  titulo: "Acta de grado",
+                  img: "/DIPLOMAS_JPG/Acta_grado_page-0001.jpg",
+                  pdf: "/public/certificados/Acta_grado_page-0001.pdf",
+                  desc: "Diplomado académico realizado durante la formación de bachillerato.",
+                },
+                {
+                  titulo: "Diplomado bachillerato",
+                  img: "/DIPLOMAS_JPG/Diploma_page-0001.jpg",
+                  pdf: "/public/certificados/Diploma_page-0001.pdf",
+                  desc: "Reconocimiento por participación en diplomado durante el bachillerato.",
+                },
+              ].map((certi, i) => (
+                <div className="tarjeta" key={i}>
+                  <h3>{certi.titulo}</h3>
+                  <img
+                    src={certi.img}
+                    alt={certi.titulo}
+                    onClick={() => {
+                      setImagenActual(certi.img);
+                      setMostrarImagen(true);
+                    }}
+                  />
+                  <p>{certi.desc}</p>
+                </div>
+              ))}
+            </div>
+            <button
+              className="scroll-btn-diploma-right"
+              onClick={() =>
+                tarjetasRef2.current.scrollBy({ left: 500, behavior: "smooth" })
+              }
+            >
             </button>
           </div>
         </div>
