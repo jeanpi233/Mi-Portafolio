@@ -5,11 +5,11 @@ const Hojav = () => {
   const [mostrarModal, setMostrarModal] = useState(false);
 
   const imagenesPDF = [
-    "/public/HOJAV/pagina 1.jpg",
-    "/public/HOJAV/pagina 2.jpg",
+    "/HOJAV/pagina 1.jpg",
+    "/HOJAV/pagina 2.jpg",
   ];
 
-  const rutaPDF = "/public/HOJAV/HDVJPMZ.pdf";
+  const rutaPDF = "/HOJAV/HDVJPMZ.pdf";
 
   return (
     <section className="seccion-hoja">
