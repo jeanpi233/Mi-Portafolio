@@ -25,11 +25,6 @@ export default function Info() {
 
         <div className="contenedor-info">
           <div className="columna">
-            <img
-              className="img_perfil"
-              src="/foto_perfil.jpg"
-              alt="Foto de perfil"
-            />
             <div className="contenedor-btn-hv"><Link to="/Hojav" className="btn-hv">HV</Link></div>
 
             <h3>Habilidades Técnicas</h3>
