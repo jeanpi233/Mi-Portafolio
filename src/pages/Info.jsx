@@ -27,7 +27,7 @@ export default function Info() {
           <div className="columna">
                         <img
               className="img_perfil"
-              src="/public/FOTOPERFIL.jpeg"
+              src="/public/foto_perfil.jpg"
               alt="Foto de perfil"
             />
             <div 
