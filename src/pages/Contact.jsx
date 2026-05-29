@@ -15,7 +15,7 @@ export default function Contact() {
 
           <ul className="lista-contacto">
             <li>
-              📍 <strong>Ubicación: </strong> Medellín, Colombia
+              📍 <strong>Ubicación: </strong> cali valle del cauca, Colombia
             </li>
           </ul>
 
